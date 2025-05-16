@@ -1,0 +1,690 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soares Tavares - Advocacia e Consultoria Jurídica</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap');
+        
+        body {
+            font-family: 'Montserrat', sans-serif;
+            scroll-behavior: smooth;
+        }
+        
+        .gold-text {
+            color: #D4AF37;
+        }
+        
+        .gold-border {
+            border-color: #D4AF37;
+        }
+        
+        .gold-bg {
+            background-color: #D4AF37;
+        }
+        
+        .dark-gray-bg {
+            background-color: #2D3748;
+        }
+        
+        .dark-gray-text {
+            color: #2D3748;
+        }
+        
+        .light-gray-text {
+            color: #718096;
+        }
+        
+        .whatsapp-green {
+            background-color: #25D366;
+        }
+        
+        .whatsapp-green:hover {
+            background-color: #128C7E;
+        }
+        
+        .header-divider {
+            position: relative;
+        }
+        
+        .header-divider::after {
+            content: "";
+            position: absolute;
+            left: 50%;
+            bottom: -8px;
+            width: 30px;
+            height: 1px;
+            background-color: #D4AF37;
+            transform: translateX(-50%);
+        }
+        
+        .hero-image {
+            border-radius: 20px;
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+        }
+        
+        .practice-area-card {
+            border-top: 3px solid #D4AF37;
+            transition: all 0.3s ease;
+        }
+        
+        .practice-area-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
+        }
+        
+        .profile-card {
+            border-top: 3px solid #D4AF37;
+        }
+        
+        .profile-image {
+            border-radius: 15px;
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+        
+        .blog-card {
+            border-top: 3px solid #D4AF37;
+        }
+        
+        .blog-image {
+            border-top-left-radius: 15px;
+            border-top-right-radius: 15px;
+        }
+        
+        .blog-content {
+            border-bottom-left-radius: 15px;
+            border-bottom-right-radius: 15px;
+        }
+        
+        .faq-item {
+            border-top: 2px solid #D4AF37;
+            transition: all 0.3s ease;
+        }
+        
+        .faq-item:hover {
+            transform: translateY(-2px);
+        }
+        
+        .watermark {
+            position: absolute;
+            opacity: 0.05;
+            z-index: -1;
+            font-size: 20rem;
+            font-weight: 900;
+            color: #D4AF37;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        
+        .vertical-divider {
+            position: relative;
+            height: 100px;
+            width: 2px;
+            background-color: #D4AF37;
+            margin: 20px auto;
+        }
+        
+        .nav-link {
+            position: relative;
+        }
+        
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: -4px;
+            left: 0;
+            background-color: #D4AF37;
+            transition: width 0.3s ease;
+        }
+        
+        .nav-link:hover::after {
+            width: 100%;
+        }
+        
+        .active-nav::after {
+            width: 100%;
+            background-color: #000;
+        }
+
+.nav-link {
+    position: relative;
+}
+.nav-link.active-nav {
+    color: #B89F5B;
+}
+.nav-link.active-nav::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #B89F5B;
+}
+
+
+    </style>
+</head>
+<body class="bg-white">
+    <!-- Header -->
+    <header class="sticky top-0 bg-white z-50 border-b border-gray-100 shadow-sm">
+    <div class="container mx-auto px-4">
+        <div class="flex flex-col items-center py-4">
+            <!-- Logo -->
+            <div class="mb-4 transition-all duration-300 hover:opacity-90">
+                <img 
+                    src="https://i.imgur.com/omPux21.png" 
+                    alt="Soares Tavares Advocacia" 
+                    class="w-[180px] md:w-[220px] h-auto"
+                >
+            </div>
+            
+            <!-- Navigation -->
+            <nav class="w-full">
+                <ul class="flex justify-center space-x-4 md:space-x-8">
+                    <li>
+                        <a href="#" class="nav-link px-3 py-2 text-gray-700 hover:text-gold font-medium transition-colors relative
+                        before:absolute before:bottom-0 before:left-0 before:w-0 before:h-[2px] before:bg-gold before:transition-all before:duration-300
+                        hover:before:w-full">
+                            Início
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="nav-link px-3 py-2 text-gray-500 hover:text-gold font-medium transition-colors relative
+                        before:absolute before:bottom-0 before:left-0 before:w-0 before:h-[2px] before:bg-gold before:transition-all before:duration-300
+                        hover:before:w-full">
+                            Serviços
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="nav-link px-3 py-2 text-gray-500 hover:text-gold font-medium transition-colors relative
+                        before:absolute before:bottom-0 before:left-0 before:w-0 before:h-[2px] before:bg-gold before:transition-all before:duration-300
+                        hover:before:w-full">
+                            Sobre nós
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="nav-link px-3 py-2 text-gold font-medium transition-colors relative
+                        before:absolute before:bottom-0 before:left-0 before:w-full before:h-[2px] before:bg-gold">
+                            Blog
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</header>
+
+<!-- Espaço para compensar o header fixo -->
+<div class="pt-26 md:pt-30"></div>
+    <!-- Hero Section -->
+    <section class="py-16">
+    <div class="container mx-auto px-4">
+        <div class="flex flex-col lg:flex-row items-center">
+            <!-- Left Column - Text -->
+            <div class="lg:w-1/2 mb-12 lg:mb-0 lg:pr-12">
+                <h1 class="text-4xl md:text-5xl font-bold mb-6">
+                    Justiça trabalhista e previdenciária com <span class="gold-text">ética</span> e <span class="gold-text">resultados</span>.
+                </h1>
+                <p class="text-lg dark-gray-text mb-8">
+                    Atuação especializada em Direito Previdenciário e do Trabalho, com foco na proteção dos seus direitos de forma ética e personalizada.
+                </p>
+                <a href="https://api.whatsapp.com/send?phone=556384185941&text=Ol%C3%A1%2C%20gostaria%20de%20falar%20com%20o%20Advogado." class="inline-block whatsapp-green text-white font-bold py-4 px-8 rounded-lg mb-8 hover:shadow-lg transition duration-300">
+                    FALAR NO WHATSAPP <i class="fas fa-arrow-right ml-2"></i>
+                </a>
+                <div class="flex items-center">
+                    <i class="fas fa-check gold-text mr-2"></i>
+                    <span class="dark-gray-text">Atendimento online em todo Brasil.</span>
+                </div>
+            </div>
+            
+            <!-- Right Column - Image -->
+            <!-- ... (restante do código igual) ... -->
+
+<!-- Right Column - Image -->
+<div class="lg:w-1/2 flex justify-center">
+    <img src="https://i.imgur.com/5vo4Qq4.jpeg" 
+         alt="Advogados Soares Tavares" 
+         class="w-full h-auto max-w-[500px] md:max-w-[400px] lg:max-w-[500px] mx-auto rounded-xl shadow-md">
+</div>
+
+<!-- ... (restante do código igual) ... -->
+        </div>
+    </div>
+</section>
+
+    <!-- Practice Areas Section -->
+    <section class="py-20 bg-gray-50 relative overflow-hidden">
+        <div class="watermark">ST</div>
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-6">Conheça nossas áreas de atuação:</h2>
+            
+            <div class="vertical-divider">
+                <i class="fas fa-gavel absolute left-1/2 transform -translate-x-1/2 -translate-y-1/2 gold-text text-3xl"></i>
+            </div>
+            
+            <div class="flex flex-col lg:flex-row gap-8 mt-12">
+                <!-- Left Column - Previdenciária -->
+                <div class="lg:w-1/2">
+                    <h3 class="text-2xl font-bold mb-6 text-center">Previdenciária</h3>
+                    
+                    <div class="space-y-6">
+                        <!-- Card 1 -->
+                        <div class="practice-area-card dark-gray-bg p-6 rounded-lg">
+                            <h4 class="text-xl font-bold text-white mb-3">Pedidos de aposentadoria</h4>
+                            <p class="text-white">
+                                Cuidamos do seu pedido de aposentadoria do início ao fim, buscando sempre a melhor estratégia para garantir seu benefício.
+                            </p>
+                        </div>
+                        
+                        <!-- Card 2 -->
+                        <div class="practice-area-card dark-gray-bg p-6 rounded-lg">
+                            <h4 class="text-xl font-bold text-white mb-3">Benefícios por Incapacidade</h4>
+                            <p class="text-white">
+                                Assessoria completa para obtenção de auxílio-doença, auxílio-acidente e outros benefícios por incapacidade.
+                            </p>
+                        </div>
+                        
+                        <!-- Card 3 -->
+                        <div class="practice-area-card dark-gray-bg p-6 rounded-lg">
+                            <h4 class="text-xl font-bold text-white mb-3">Pensão por Morte</h4>
+                            <p class="text-white">
+                                Atuamos para garantir que os dependentes recebam o benefício de pensão por morte de forma ágil e justa.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Right Column - Trabalhista -->
+                <div class="lg:w-1/2">
+                    <h3 class="text-2xl font-bold mb-6 text-center">Trabalhista</h3>
+                    
+                    <div class="space-y-6">
+                        <!-- Card 1 -->
+                        <div class="practice-area-card dark-gray-bg p-6 rounded-lg">
+                            <h4 class="text-xl font-bold text-white mb-3">Demissão injusta</h4>
+                            <p class="text-white">
+                                Atuamos na reparação de demissões sem justa causa, assegurando seus direitos trabalhistas.
+                            </p>
+                        </div>
+                        
+                        <!-- Card 2 -->
+                        <div class="practice-area-card dark-gray-bg p-6 rounded-lg">
+                            <h4 class="text-xl font-bold text-white mb-3">FGTS não recolhido</h4>
+                            <p class="text-white">
+                                Recuperamos valores não depositados do FGTS, garantindo seus direitos previdenciários.
+                            </p>
+                        </div>
+                        
+                        <!-- Card 3 -->
+                        <div class="practice-area-card dark-gray-bg p-6 rounded-lg">
+                            <h4 class="text-xl font-bold text-white mb-3">Carteira não assinada</h4>
+                            <p class="text-white">
+                                Regularizamos situações de trabalho informal, buscando a reparação dos direitos violados.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+<section class="py-20">
+    <div class="container mx-auto px-4 text-center">
+        <h2 class="text-3xl font-bold mb-6">Atuamos em inúmeros casos, a advocacia é para todos.</h2>
+        <div class="header-divider mb-12"></div>
+        
+        <a href="https://api.whatsapp.com/send?phone=556384185941&text=Ol%C3%A1%2C%20gostaria%20de%20falar%20com%20o%20Advogado." class="inline-block whatsapp-green text-white font-bold py-4 px-8 rounded-lg mb-16 hover:shadow-lg transition duration-300">
+            FALAR NO WHATSAPP <i class="fas fa-arrow-right ml-2"></i>
+        </a>
+        
+        <h3 class="text-3xl font-bold mb-8">Conheça os advogados especialistas:</h3>
+    </div>
+</section>
+
+<!-- Italo Profile -->
+<section class="py-12">
+    <div class="container mx-auto px-4">
+        <div class="flex flex-col lg:flex-row items-center gap-12">
+            <!-- Left Column - Image -->
+            <div class="lg:w-1/2 flex justify-center">
+                <img src="https://i.imgur.com/HOZWFnO.jpeg" 
+                     alt="Ítalo Soares Tavares" 
+                     class="w-full h-auto max-w-[500px] rounded-xl shadow-lg object-cover object-top" 
+                     style="height: 600px;">
+            </div>
+            
+            <!-- Right Column - Text -->
+            <div class="lg:w-1/2">
+                <div class="profile-card dark-gray-bg p-8 rounded-xl shadow-lg">
+                    <h3 class="text-2xl font-bold text-white mb-2">Ítalo Soares Tavares</h3>
+                    <p class="text-white mb-6">Advogado – OAB/TO 12.980</p>
+                    
+                    <p class="text-white mb-8">
+                        Advogado atuante na área trabalhista, com sólida experiência na defesa dos direitos dos trabalhadores e empresas. Comprometido com a justiça e a ética profissional, oferece assessoria jurídica personalizada, buscando sempre as melhores soluções para seus clientes.
+                    </p>
+                    
+                    <a href="https://api.whatsapp.com/send?phone=556381003098&text=Ol%C3%A1%2C%20gostaria%20de%20falar%20com%20o%20Advogado%20da%20%C3%A1rea%20trabalhista." class="inline-block whatsapp-green text-white font-bold py-3 px-6 rounded-lg hover:shadow-lg transition duration-300">
+                        FALAR COM ÍTALO SOARES <i class="fas fa-arrow-right ml-2"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Vitor Profile -->
+<section class="py-12">
+    <div class="container mx-auto px-4">
+        <div class="flex flex-col lg:flex-row-reverse items-center gap-12">
+            <!-- Right Column - Image -->
+            <div class="lg:w-1/2 flex justify-center">
+                <img src="https://i.imgur.com/kyCJM8J.jpeg" 
+                     alt="Vitor Soares Tavares" 
+                     class="w-full h-auto max-w-[500px] rounded-xl shadow-lg object-cover object-top" 
+                     style="height: 600px;">
+            </div>
+            
+            <!-- Left Column - Text -->
+            <div class="lg:w-1/2">
+                <div class="profile-card dark-gray-bg p-8 rounded-xl shadow-lg">
+                    <h3 class="text-2xl font-bold text-white mb-2">Vitor Soares Tavares</h3>
+                    <p class="text-white mb-6">Advogado – OAB/TO 11.035</p>
+                    
+                    <p class="text-white mb-8">
+                        Advogado especializado em Direito Previdenciário, dedicado a garantir o acesso de seus clientes aos seus direitos. Com atuação precisa e empática, orienta aposentadorias, benefícios por incapacidade e revisões, sempre com foco na segurança jurídica e no bem-estar dos segurados.
+                    </p>
+                    
+                    <a href="https://api.whatsapp.com/send?phone=556384185941&text=Ol%C3%A1%2C%20gostaria%20de%20falar%20com%20o%20Advogado%20da%20%C3%A1rea%20previdenci%C3%A1ria." class="inline-block whatsapp-green text-white font-bold py-3 px-6 rounded-lg hover:shadow-lg transition duration-300">
+                        FALAR COM VITOR SOARES <i class="fas fa-arrow-right ml-2"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- FAQ Section -->
+    <section class="py-20 bg-gray-50">
+    <div class="container mx-auto px-4">
+        <h2 class="text-3xl font-bold text-center mb-6">FAQ – Perguntas Frequentes</h2>
+        
+        <div class="vertical-divider mb-12"></div>
+        
+        <div class="max-w-3xl mx-auto space-y-4">
+            <!-- FAQ Item 1 -->
+            <div class="faq-item dark-gray-bg p-6 rounded-xl cursor-pointer transition-all duration-300 hover:bg-opacity-95">
+                <div class="flex justify-between items-center" onclick="toggleFAQ(1)">
+                    <h3 class="text-lg font-bold text-white">1. Como funciona a consulta inicial?</h3>
+                    <i class="fas fa-chevron-down text-white transition-transform duration-300"></i>
+                </div>
+                <div class="faq-answer mt-4 text-white overflow-hidden max-h-0 transition-all duration-300">
+                    <div class="pt-4 border-t border-white/20">
+                        <p>A consulta inicial é gratuita e realizada online. Durante 30 minutos, analisaremos seu caso, explicaremos as possíveis estratégias jurídicas e tiraremos todas suas dúvidas sobre o processo.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- FAQ Item 2 -->
+            <div class="faq-item dark-gray-bg p-6 rounded-xl cursor-pointer transition-all duration-300 hover:bg-opacity-95">
+                <div class="flex justify-between items-center" onclick="toggleFAQ(2)">
+                    <h3 class="text-lg font-bold text-white">2. É possível contratar um advogado à distância?</h3>
+                    <i class="fas fa-chevron-down text-white transition-transform duration-300"></i>
+                </div>
+                <div class="faq-answer mt-4 text-white overflow-hidden max-h-0 transition-all duration-300">
+                    <div class="pt-4 border-t border-white/20">
+                        <p>Sim, todo nosso processo é digital. Desde a contratação até o acompanhamento do caso, você pode realizar tudo online através de nossa plataforma segura, com assinatura eletrônica de documentos.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- FAQ Item 3 -->
+            <div class="faq-item dark-gray-bg p-6 rounded-xl cursor-pointer transition-all duration-300 hover:bg-opacity-95">
+                <div class="flex justify-between items-center" onclick="toggleFAQ(3)">
+                    <h3 class="text-lg font-bold text-white">3. Como posso acompanhar meu caso?</h3>
+                    <i class="fas fa-chevron-down text-white transition-transform duration-300"></i>
+                </div>
+                <div class="faq-answer mt-4 text-white overflow-hidden max-h-0 transition-all duration-300">
+                    <div class="pt-4 border-t border-white/20">
+                        <p>Oferecemos acesso exclusivo a uma área do cliente com atualizações em tempo real. Você receberá notificações por e-mail e WhatsApp sempre que houver novidades em seu processo.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- FAQ Item 4 -->
+            <div class="faq-item dark-gray-bg p-6 rounded-xl cursor-pointer transition-all duration-300 hover:bg-opacity-95">
+                <div class="flex justify-between items-center" onclick="toggleFAQ(4)">
+                    <h3 class="text-lg font-bold text-white">4. Quanto custa contratar um advogado?</h3>
+                    <i class="fas fa-chevron-down text-white transition-transform duration-300"></i>
+                </div>
+                <div class="faq-answer mt-4 text-white overflow-hidden max-h-0 transition-all duration-300">
+                    <div class="pt-4 border-t border-white/20">
+                        <p>Nosso modelo de honorários é transparente: cobramos apenas se obtivermos resultados positivos. Os valores variam conforme a complexidade do caso e serão definidos após análise detalhada na consulta inicial.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script>
+function toggleFAQ(number) {
+    const faqItem = document.querySelectorAll('.faq-item')[number-1]
+    const answer = faqItem.querySelector('.faq-answer')
+    const icon = faqItem.querySelector('i')
+    
+    // Toggle answer
+    answer.style.maxHeight = answer.style.maxHeight === '0px' || !answer.style.maxHeight 
+        ? `${answer.scrollHeight}px` 
+        : '0px'
+    
+    // Toggle icon rotation
+    icon.classList.toggle('rotate-180')
+    
+    // Toggle background color
+    faqItem.classList.toggle('bg-opacity-95')
+}
+</script>
+
+    <!-- Final CTA Section -->
+<section class="py-20 bg-gray-50">
+    <div class="container mx-auto px-4 text-center">
+        <div class="max-w-3xl mx-auto mb-16">
+            <h2 class="text-4xl font-bold mb-6">Tenha certeza que terá a melhor solução para o seu caso.</h2>
+            
+            <p class="text-lg dark-gray-text mb-8">
+                Temos profissionais capacitados para atender de forma personalizada, buscando o melhor resultado com 
+                <span class="gold-text font-medium">ética</span> e <span class="gold-text font-medium">justiça</span>.
+            </p>
+            
+            <div class="space-y-6">
+                <p class="text-xl font-medium dark-gray-text">Fale agora com um especialista:</p>
+                <a href="https://api.whatsapp.com/send?phone=556384185941&text=Ol%C3%A1%2C%20gostaria%20de%20falar%20com%20o%20Advogado." class="inline-block whatsapp-green text-white font-bold py-4 px-12 rounded-xl hover:shadow-lg 
+                transition duration-300 transform hover:scale-105">
+                    FALAR NO WHATSAPP <i class="fas fa-arrow-right ml-2"></i>
+                </a>
+            </div>
+        </div>
+
+        <div class="border-t border-gray-200 mt-20 pt-16">
+    <h3 class="text-4xl font-bold mb-16">
+        <span class="dark-gray-text">Conhecimento em</span> 
+        <span class="gold-text">Destaque</span>
+    </h3>
+    
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
+        <!-- Blog Card 1 -->
+        <a href="/artigos/direitos-trabalhistas" class="block">
+            <article class="blog-card group overflow-hidden rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300">
+                <img src="https://images.unsplash.com/photo-1450101499163-c8848c66ca85" 
+                     alt="Direitos trabalhistas" 
+                     class="w-full h-56 object-cover transition-transform duration-300 group-hover:scale-105">
+                
+                <div class="dark-gray-bg p-8">
+                    <div class="mb-4">
+                        <span class="text-sm gold-text">DIREITO TRABALHISTA</span>
+                        <h4 class="text-xl font-bold text-white mt-2 mb-3">Guia Completo dos Direitos Trabalhistas</h4>
+                        <p class="text-white/90 text-justify">
+                            Descubra como proteger seus direitos desde a admissão até a rescisão contratual.
+                        </p>
+                    </div>
+                    <div class="border-t border-white/20 pt-4">
+                        <p class="text-sm text-white/80">15 DE MAIO DE 2025</p>
+                    </div>
+                </div>
+            </article>
+        </a>
+
+        <!-- Blog Card 2 -->
+        <a href="/artigos/legislacao-previdenciaria" class="block">
+            <article class="blog-card group overflow-hidden rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300">
+                <img src="https://images.unsplash.com/photo-1589829545856-d10d557cf95f" 
+                     alt="Direito previdenciário" 
+                     class="w-full h-56 object-cover transition-transform duration-300 group-hover:scale-105">
+                
+                <div class="dark-gray-bg p-8">
+                    <div class="mb-4">
+                        <span class="text-sm gold-text">PREVIDENCIÁRIO</span>
+                        <h4 class="text-xl font-bold text-white mt-2 mb-3">Atualizações da Legislação Previdenciária</h4>
+                        <p class="text-white/90 text-justify">
+                            Entenda as novas regras para aposentadoria e como planejar seu futuro com segurança.
+                        </p>
+                    </div>
+                    <div class="border-t border-white/20 pt-4">
+                        <p class="text-sm text-white/80">10 DE ABRIL DE 2025</p>
+                    </div>
+                </div>
+            </article>
+        </a>
+
+        <!-- Blog Card 3 -->
+        <a href="/artigos/direitos-ocultos-previdenciarios" class="block">
+            <article class="blog-card group overflow-hidden rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300">
+                <img src="https://www.unisuam.edu.br/wp-content/uploads/2023/10/arapuan-netto-rio-innovation-1.jpg" 
+                     alt="Direito previdenciário" 
+                     class="w-full h-56 object-cover transition-transform duration-300 group-hover:scale-105">
+                
+                <div class="dark-gray-bg p-8">
+                    <div class="mb-4">
+                        <span class="text-sm gold-text">PREVIDENCIÁRIO</span>
+                        <h4 class="text-xl font-bold text-white mt-2 mb-3">Atualizações da Legislação Previdenciária</h4>
+                        <p class="text-white/90 text-justify">
+                            Saiba direitos que você possui e não sabia. Artigo com 7 pontos importantes que você deve saber.
+                        </p>
+                    </div>
+                    <div class="border-t border-white/20 pt-4">
+                        <p class="text-sm text-white/80">10 DE ABRIL DE 2025</p>
+                    </div>
+                </div>
+            </article>
+        </a>
+    </div>
+
+   
+</div>
+
+
+            <a href="#" class="inline-flex items-center gold-text font-medium py-3 px-8 border-2 border-gold 
+            rounded-full hover:bg-gold/10 transition-all duration-300">
+                Ver todos os artigos
+                <i class="fas fa-arrow-right ml-3 text-lg"></i>
+            </a>
+        </div>
+    </div>
+</section>
+
+    <!-- Footer -->
+<!-- Footer -->
+<footer class="bg-white py-12 border-t border-gray-100">
+    <div class="container mx-auto px-4">
+        <div class="flex flex-col lg:flex-row gap-8 lg:gap-16 mb-12">
+            <!-- Logo e Descrição -->
+            <div class="lg:w-2/5 mb-8 lg:mb-0">
+                <div class="mb-6">
+                    <img src="https://i.imgur.com/omPux21.png" 
+                         alt="Soares Tavares Advocacia" 
+                         class="max-w-[220px] h-auto">
+                </div>
+                <p class="text-gray-600 text-sm leading-relaxed mb-6">
+                    Atuação especializada com excelência em Direito Previdenciário e Trabalhista, 
+                    garantindo a proteção jurídica com ética e comprometimento.
+                </p>
+                <div class="flex space-x-4">
+                
+                    <a href="https://www.instagram.com/soarestavares.advocacia/" class="text-gray-500 hover:text-gold transition-colors">
+                        <i class="fab fa-instagram text-lg"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Contatos -->
+            <div class="lg:w-3/5 grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div>
+                    <h4 class="text-lg font-semibold text-gray-800 mb-4">Contato Direto</h4>
+                    <ul class="space-y-3">
+                        <li class="flex items-center">
+                            <i class="fas fa-phone text-gray-500 mr-3"></i>
+                            <span class="text-gray-600">(63) 9 9241-8539</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-envelope text-gray-500 mr-3"></i>
+                            <span class="text-gray-600">soarestavares.adv@gmail.com</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="text-lg font-semibold text-gray-800 mb-4">Visite Nosso Escritório</h4>
+                    <div class="flex">
+                        <i class="fas fa-map-marker-alt text-gray-500 mr-3 mt-1"></i>
+                        <p class="text-gray-600">
+                            Edifício Urban Futuro ACSU-SO 20 (201 Sul)<br>
+                            Av. Teotônio Segurado, Lote 15 Conjunto 01<br>
+                            5º andar, Sala 504<br>
+                            Palmas – TO
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Divider -->
+        <div class="border-t border-gray-100 my-8"></div>
+
+        <!-- Copyright -->
+        <div class="flex flex-col md:flex-row justify-between items-center text-center">
+            <p class="text-gray-500 text-sm mb-2 md:mb-0">
+                © 2025 Soares Tavares Advocacia. Todos direitos reservados.
+            </p>
+            <div class="flex space-x-4">
+                <a href="#" class="text-gray-500 hover:text-gold text-sm">Política de Privacidade</a>
+                <a href="#" class="text-gray-500 hover:text-gold text-sm">Termos de Uso</a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+    <script>
+        // Simple script to handle FAQ accordion functionality
+        document.querySelectorAll('.faq-item').forEach(item => {
+            item.addEventListener('click', () => {
+                const icon = item.querySelector('i');
+                if (icon.classList.contains('fa-chevron-down')) {
+                    icon.classList.remove('fa-chevron-down');
+                    icon.classList.add('fa-chevron-up');
+                } else {
+                    icon.classList.remove('fa-chevron-up');
+                    icon.classList.add('fa-chevron-down');
+                }
+            });
+        });
+    </script>
+</body>
+</html>

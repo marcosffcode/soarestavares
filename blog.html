@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soares Tavares Advocacia | Blog Jurídico</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        gold: '#D4AF37',
+                        darkgray: 'rgba(0, 0, 0, 0.1)',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .custom-bg {
+            background-color: rgba(0, 0, 0, 0.02);
+        }
+        .gold-border {
+            border-color: #D4AF37;
+        }
+        .hover-scale {
+            transition: transform 0.3s ease;
+        }
+        .hover-scale:hover {
+            transform: translateY(-5px);
+        }
+        .article-content p {
+            margin-bottom: 1rem;
+            line-height: 1.6;
+        }
+        .article-content h2 {
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin: 1.5rem 0 1rem;
+            color: #000;
+        }
+        .article-content h3 {
+            font-size: 1.25rem;
+            font-weight: 600;
+            margin: 1.25rem 0 0.75rem;
+            color: #000;
+        }
+        .dropdown:hover .dropdown-menu {
+            display: block;
+        }
+
+
+
+        .nav-link {
+    position: relative;
+}
+.nav-link.active-nav {
+    color: #B89F5B;
+}
+.nav-link.active-nav::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #B89F5B;
+}
+
+
+    </style>
+</head>
+<body class="font-sans bg-white text-gray-800">
+    <!-- Header -->
+     <header class="sticky top-0 bg-white z-50 border-b border-gray-100 shadow-sm">
+    <div class="container mx-auto px-4">
+        <div class="flex flex-col items-center py-4">
+            <!-- Logo -->
+            <div class="mb-4 transition-all duration-300 hover:opacity-90">
+                <img 
+                    src="https://i.imgur.com/omPux21.png" 
+                    alt="Soares Tavares Advocacia" 
+                    class="w-[180px] md:w-[220px] h-auto"
+                >
+            </div>
+            
+            <!-- Navigation -->
+            <nav class="w-full">
+                <ul class="flex justify-center space-x-4 md:space-x-8">
+                    <li>
+                        <a href="#" class="nav-link px-3 py-2 text-gray-700 hover:text-gold font-medium transition-colors relative
+                        before:absolute before:bottom-0 before:left-0 before:w-0 before:h-[2px] before:bg-gold before:transition-all before:duration-300
+                        hover:before:w-full">
+                            Início
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="nav-link px-3 py-2 text-gray-500 hover:text-gold font-medium transition-colors relative
+                        before:absolute before:bottom-0 before:left-0 before:w-0 before:h-[2px] before:bg-gold before:transition-all before:duration-300
+                        hover:before:w-full">
+                            Serviços
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="nav-link px-3 py-2 text-gray-500 hover:text-gold font-medium transition-colors relative
+                        before:absolute before:bottom-0 before:left-0 before:w-0 before:h-[2px] before:bg-gold before:transition-all before:duration-300
+                        hover:before:w-full">
+                            Sobre nós
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="nav-link px-3 py-2 text-gold font-medium transition-colors relative
+                        before:absolute before:bottom-0 before:left-0 before:w-full before:h-[2px] before:bg-gold">
+                            Blog
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</header>
+
+<!-- Espaço para compensar o header fixo -->
+<div class="pt-26 md:pt-30"></div>
+
+    <!-- Hero Section -->
+    <section class="bg-white py-16">
+        <div class="container mx-auto px-4">
+            <div class="max-w-3xl mx-auto text-center">
+                <h2 class="text-4xl md:text-5xl font-bold mb-6">Conhecimento Jurídico <span class="text-gold">Simplificado</span></h2>
+                <p class="text-lg text-gray-600 mb-8">Artigos e análises sobre as principais questões do direito brasileiro, escritos pelos especialistas da Soares Tavares Advocacia.</p>
+                <div class="flex justify-center space-x-4">
+                    <a href="#" class="bg-black text-white px-6 py-3 rounded hover:bg-opacity-90 transition">Artigos Recentes</a>
+                    <a href="#" class="border border-black px-6 py-3 rounded hover:bg-darkgray transition">Sobre o Escritório</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Article -->
+    <section class="bg-darkgray py-12">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row bg-white rounded-lg overflow-hidden shadow-lg">
+                <div class="md:w-1/2">
+                    <img src="https://images.unsplash.com/photo-1589829545856-d10d557cf95f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="Direito" class="w-full h-full object-cover">
+                </div>
+                <div class="md:w-1/2 p-8">
+                    <div class="flex items-center mb-4">
+                        <span class="bg-gold text-white text-xs px-2 py-1 rounded">DESTAQUE</span>
+                        <span class="ml-4 text-sm text-gray-500">15 de Abril, 2025</span>
+                    </div>
+                    <h2 class="text-2xl md:text-3xl font-bold mb-4">As Novas Tendências no Direito Digital Brasileiro</h2>
+                    <p class="text-gray-600 mb-6">Com a crescente digitalização da sociedade, o direito digital tem se tornado cada vez mais relevante. Neste artigo, analisamos as principais mudanças legislativas e jurisprudenciais que estão moldando esse campo no Brasil.</p>
+                    <div class="flex items-center">
+                    
+                        <div>
+                            <p class="text-sm font-medium">Dr. Ítalo Soares</p>
+                            <p class="text-xs text-gray-500">Sócio Fundador</p>
+                        </div>
+                    </div>
+                    <a href="#" class="mt-6 inline-block text-gold font-medium hover:underline">Ler Artigo Completo →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Articles Grid -->
+    <section class="py-16">
+        <div class="container mx-auto px-4">
+            <div class="flex justify-between items-center mb-12">
+                <h2 class="text-3xl font-bold">Artigos Recentes</h2>
+                <a href="#" class="text-gold hover:underline">Ver Todos</a>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Article 1 -->
+                <article class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition hover-scale">
+                    <img src="https://images.unsplash.com/photo-1589391886645-d51941baf7fb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="Direito Trabalhista" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <div class="flex justify-between items-center mb-3">
+                            <span class="text-xs text-gold font-medium">DIREITO TRABALHISTA</span>
+                            <span class="text-xs text-gray-500">10 Abr, 2025</span>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3">Reforma Trabalhista: O Que Mudou em 2023?</h3>
+                        <p class="text-gray-600 mb-4">Análise detalhada das novas alterações na legislação trabalhista e seus impactos nas relações empregatícias.</p>
+                        <a href="#" class="text-gold font-medium hover:underline">Ler Artigo →</a>
+                    </div>
+                </article>
+                
+                <!-- Article 2 -->
+                <article class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition hover-scale">
+                    <img src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="Direito Empresarial" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <div class="flex justify-between items-center mb-3">
+                            <span class="text-xs text-gold font-medium">DIREITO EMPRESARIAL</span>
+                            <span class="text-xs text-gray-500">5 Mai, 2025</span>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3">LGPD para Pequenas Empresas: O Que Você Precisa Saber</h3>
+                        <p class="text-gray-600 mb-4">Guia prático para adequação à Lei Geral de Proteção de Dados, especialmente voltado para pequenos negócios.</p>
+                        <a href="#" class="text-gold font-medium hover:underline">Ler Artigo →</a>
+                    </div>
+                </article>
+                
+                <!-- Article 3 -->
+                <article class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition hover-scale">
+                    <img src="https://images.unsplash.com/photo-1450101499163-c8848c66ca85?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="Direito Civil" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <div class="flex justify-between items-center mb-3">
+                            <span class="text-xs text-gold font-medium">DIREITO CIVIL</span>
+                            <span class="text-xs text-gray-500">28 Mai, 2025</span>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3">Herança Digital: Como Proteger Seus Bens Virtuais</h3>
+                        <p class="text-gray-600 mb-4">Entenda como planejar a sucessão de contas digitais, criptomoedas e outros ativos intangíveis no ordenamento jurídico brasileiro.</p>
+                        <a href="#" class="text-gold font-medium hover:underline">Ler Artigo →</a>
+                    </div>
+                </article>
+            </div>
+            
+            <div class="text-center mt-12">
+                <a href="#" class="inline-block border border-black px-6 py-3 rounded hover:bg-darkgray transition">Carregar Mais Artigos</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter -->
+    <!-- CTA Simplificado e Profissional -->
+<section class="bg-white py-20 border-t border-gray-100">
+    <div class="container mx-auto px-4">
+        <div class="max-w-3xl mx-auto text-center">
+            <!-- Ícone decorativo -->
+            <div class="mb-8 flex justify-center">
+                <div class="bg-gold/10 p-4 rounded-2xl">
+                    <i class="fas fa-scale-balanced text-3xl text-gold"></i>
+                </div>
+            </div>
+            
+            <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
+                Seus Direitos Merecem 
+                <span class="text-gold">Atenção Especializada</span>
+            </h2>
+            
+            <p class="text-lg text-gray-600 mb-8 max-w-xl mx-auto leading-relaxed">
+                Nossa equipe está pronta para oferecer soluções jurídicas eficientes nas áreas Trabalhista e Previdenciária.
+            </p>
+
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="https://api.whatsapp.com/send?phone=556384185941&text=Ol%C3%A1%2C%20gostaria%20de%20falar%20com%20o%20Advogado." class="bg-[#25D366] text-white px-8 py-4 rounded-lg font-medium hover:bg-[#128C7E] 
+                transition-colors shadow-sm hover:shadow-md flex items-center justify-center gap-2">
+    <i class="fab fa-whatsapp text-xl"></i>
+    Conversar pelo WhatsApp
+</a>
+                
+                <a href="https://g.co/kgs/s3JpTgg" class="border-2 border-gray-300 text-gray-700 px-8 py-4 rounded-lg hover:border-gold 
+                hover:text-gold transition-colors font-medium">
+                    <span class="flex items-center gap-2">
+                        <i class="fas fa-building"></i>
+                        Conhecer o Escritório
+                    </span>
+                </a>
+            </div>
+
+            <!-- Elementos de confiança -->
+            <div class="mt-12 pt-8 border-t border-gray-100">
+                <p class="text-sm text-gray-500">
+                    Atendimento imediato: (63) 9 9241-8539 | OAB/TO 12.980
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- Practice Areas -->
+<section class="py-16 bg-gray-50">
+    <div class="container mx-auto px-4">
+        <div class="max-w-4xl mx-auto text-center mb-16">
+            <h2 class="text-4xl font-bold mb-4">Nossas Especialidades Jurídicas</h2>
+            <div class="h-1 w-24 bg-gold mx-auto rounded-full"></div>
+        </div>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <!-- Trabalhista -->
+            <div class="group bg-white p-8 rounded-xl shadow-sm hover:shadow-lg transition-all duration-300 border border-transparent hover:border-gold/20">
+                <div class="w-16 h-16 bg-gold/10 rounded-xl flex items-center justify-center mb-6">
+                    <i class="fas fa-briefcase text-2xl text-gold"></i>
+                </div>
+                <h3 class="text-2xl font-bold mb-4">Direito Trabalhista</h3>
+                <p class="text-gray-600 leading-relaxed">
+                    Atuação completa na defesa dos direitos trabalhistas, incluindo:
+                </p>
+                <ul class="mt-4 space-y-2 text-gray-600 text-left pl-4">
+                    <li class="flex items-center">
+                        <i class="fas fa-check text-gold mr-2 text-sm"></i>
+                        Rescisões contratuais
+                    </li>
+                    <li class="flex items-center">
+                        <i class="fas fa-check text-gold mr-2 text-sm"></i>
+                        Horas extras não pagas
+                    </li>
+                    <li class="flex items-center">
+                        <i class="fas fa-check text-gold mr-2 text-sm"></i>
+                        Assédio moral no trabalho
+                    </li>
+                    <li class="flex items-center">
+                        <i class="fas fa-check text-gold mr-2 text-sm"></i>
+                        Acidentes de trabalho
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Previdenciário -->
+            <div class="group bg-white p-8 rounded-xl shadow-sm hover:shadow-lg transition-all duration-300 border border-transparent hover:border-gold/20">
+                <div class="w-16 h-16 bg-gold/10 rounded-xl flex items-center justify-center mb-6">
+                    <i class="fas fa-shield-alt text-2xl text-gold"></i>
+                </div>
+                <h3 class="text-2xl font-bold mb-4">Direito Previdenciário</h3>
+                <p class="text-gray-600 leading-relaxed">
+                    Atendimento especializado em:
+                </p>
+                <ul class="mt-4 space-y-2 text-gray-600 text-left pl-4">
+                    <li class="flex items-center">
+                        <i class="fas fa-check text-gold mr-2 text-sm"></i>
+                        Aposentadorias e revisões
+                    </li>
+                    <li class="flex items-center">
+                        <i class="fas fa-check text-gold mr-2 text-sm"></i>
+                        Auxílio-doença e invalidez
+                    </li>
+                    <li class="flex items-center">
+                        <i class="fas fa-check text-gold mr-2 text-sm"></i>
+                        Pensão por morte
+                    </li>
+                    <li class="flex items-center">
+                        <i class="fas fa-check text-gold mr-2 text-sm"></i>
+                        Benefícios assistenciais (LOAS)
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- Footer -->
+    <footer class="bg-white py-12 border-t border-gray-100">
+    <div class="container mx-auto px-4">
+        <div class="flex flex-col lg:flex-row gap-8 lg:gap-16 mb-12">
+            <!-- Logo e Descrição -->
+            <div class="lg:w-2/5 mb-8 lg:mb-0">
+                <div class="mb-6">
+                    <img src="https://i.imgur.com/omPux21.png" 
+                         alt="Soares Tavares Advocacia" 
+                         class="max-w-[220px] h-auto">
+                </div>
+                <p class="text-gray-600 text-sm leading-relaxed mb-6">
+                    Atuação especializada com excelência em Direito Previdenciário e Trabalhista, 
+                    garantindo a proteção jurídica com ética e comprometimento.
+                </p>
+                <div class="flex space-x-4">
+                    
+                    <a href="https://www.instagram.com/soarestavares.advocacia/" class="text-gray-500 hover:text-gold transition-colors">
+                        <i class="fab fa-instagram text-lg"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Contatos -->
+            <div class="lg:w-3/5 grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div>
+                    <h4 class="text-lg font-semibold text-gray-800 mb-4">Contato Direto</h4>
+                    <ul class="space-y-3">
+                        <li class="flex items-center">
+                            <i class="fas fa-phone text-gray-500 mr-3"></i>
+                            <span class="text-gray-600">(63) 9 9241-8539</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-envelope text-gray-500 mr-3"></i>
+                            <span class="text-gray-600">soarestavares.adv@gmail.com</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="text-lg font-semibold text-gray-800 mb-4">Visite Nosso Escritório</h4>
+                    <div class="flex">
+                        <i class="fas fa-map-marker-alt text-gray-500 mr-3 mt-1"></i>
+                        <p class="text-gray-600">
+                            Edifício Urban Futuro ACSU-SO 20 (201 Sul)<br>
+                            Av. Teotônio Segurado, Lote 15 Conjunto 01<br>
+                            5º andar, Sala 504<br>
+                            Palmas – TO
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Divider -->
+        <div class="border-t border-gray-100 my-8"></div>
+
+        <!-- Copyright -->
+        <div class="flex flex-col md:flex-row justify-between items-center text-center">
+            <p class="text-gray-500 text-sm mb-2 md:mb-0">
+                © 2025 Soares Tavares Advocacia. Todos direitos reservados.
+            </p>
+            <div class="flex space-x-4">
+                <a href="#" class="text-gray-500 hover:text-gold text-sm">Política de Privacidade</a>
+                <a href="#" class="text-gray-500 hover:text-gold text-sm">Termos de Uso</a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+    <script>
+        // Mobile menu toggle
+        document.getElementById('menu-toggle').addEventListener('click', function() {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+        });
+
+        // Mobile articles menu toggle
+        document.getElementById('mobile-articles-toggle').addEventListener('click', function() {
+            const menu = document.getElementById('mobile-articles-menu');
+            menu.classList.toggle('hidden');
+        });
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
